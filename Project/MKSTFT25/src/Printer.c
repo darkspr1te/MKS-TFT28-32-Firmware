@@ -110,8 +110,8 @@ void printer_init()
 	gCfgItems.fanOnoff = 0;
 	gCfgItems.fanSpeed = 0;
 	gCfgItems.pre_fanSpeed = 127;
-	//gCfgItems.language = 1;//简体中文
-	gCfgItems.language = LANG_ENGLISH;//英文
+	//gCfgItems.language = 1;//锟斤拷锟斤拷锟斤拷锟斤拷
+	gCfgItems.language = LANG_ENGLISH;//英锟斤拷
 	gCfgItems.sprayerNum = 1;
 	gCfgItems.printSpeed = 100;
 	gCfgItems.printExtSpeed0= 100;
@@ -193,28 +193,28 @@ void printer_init()
 	}
 	#endif
 	
-	gCfgItems.background_color = 0x000000;//蓝色
-	gCfgItems.title_color = 0xFFFFFF;//白色
-	gCfgItems.state_background_color = 0x000000;//深蓝色
-	gCfgItems.state_text_color = 0xFFFFFF;//白色
-	gCfgItems.filename_background_color = 0x000000;//蓝色
-	gCfgItems.filename_color = 0xFFFFFF;//白色
-	gCfgItems.printingstate_word_background_color = 0x000000;//蓝色
-	gCfgItems.printingstate_word_color = 0xFFFFFF;//白色
+	gCfgItems.background_color = 0x000000;//锟斤拷色
+	gCfgItems.title_color = 0xFFFFFF;//锟斤拷色
+	gCfgItems.state_background_color = 0x000000;//锟斤拷锟斤拷色
+	gCfgItems.state_text_color = 0xFFFFFF;//锟斤拷色
+	gCfgItems.filename_background_color = 0x000000;//锟斤拷色
+	gCfgItems.filename_color = 0xFFFFFF;//锟斤拷色
+	gCfgItems.printingstate_word_background_color = 0x000000;//锟斤拷色
+	gCfgItems.printingstate_word_color = 0xFFFFFF;//锟斤拷色
 
 	gCfgItems.button_3d_effect_flag = 0;
 	
 	gCfgItems.MoreItem_pic_cnt = 0;
 
 	/*wifi_cfg*/
-	gCfgItems.wifi_mode_sel = 1;//1为AP模式，其他为client模式，默认为AP模式。
+	gCfgItems.wifi_mode_sel = 1;//1为AP模式锟斤拷锟斤拷锟斤拷为client模式锟斤拷默锟斤拷为AP模式锟斤拷
 	
-	memset(wifiPara, 0, sizeof(wifiPara));
-	memset(ipPara, 0, sizeof(ipPara));
+	memset(&wifiPara, 0, sizeof(wifiPara));
+	memset(&ipPara, 0, sizeof(ipPara));
 	
 	strcpy(wifiPara.ap_name,WIFI_AP_NAME);
 	strcpy(wifiPara.keyCode,WIFI_KEY_CODE);
-	//client模式初始值
+	//client模式锟斤拷始值
 	strcpy(ipPara.ip_addr,IP_ADDR);
 	strcpy(ipPara.mask,IP_MASK);
 	strcpy(ipPara.gate,IP_GATE);
@@ -222,7 +222,7 @@ void printer_init()
 	
 	ipPara.dhcp_flag = IP_DHCP_FLAG;
 
-	//AP模式初始值
+	//AP模式锟斤拷始值
 	strcpy(ipPara.dhcpd_ip,AP_IP_ADDR);
 	strcpy(ipPara.dhcpd_mask,AP_IP_MASK);
 	strcpy(ipPara.dhcpd_gate,AP_IP_GATE);
@@ -315,7 +315,7 @@ void printer_init()
 
 	get_sd_cfg();
 
-	if(gCfgItems.OVERTURN_180 != 0xee) //不翻转
+	if(gCfgItems.OVERTURN_180 != 0xee) //锟斤拷锟斤拷转
 	{
 		gCfgItems.OVERTURN_180 = 0;
 	}
